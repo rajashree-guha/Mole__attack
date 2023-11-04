@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./assests/ground-bg.png");
+    background-size: 100% 100vh ;
+    background-repeat: no-repeat;
+    font-family: 'Jua', sans-serif;
+}
+
+/* backgroung image  */
+#boardBg{
+    background-image: url("./assests/board1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 1100px;
+    height: 580px;
+    margin: 4% 0 0 12%;
+    color: #fff;
+}
+
+/* instructions text  */
+h1{
+    text-align: center;
+    padding: 5% 0 0 5%;
+    font-size: 48px;
+}
+
+/* intsructions points */
+#instructions{
+text-align: left;
+font-size: 26px;
+width: 650px;
+margin: 3% 0 0 23%;
+}
+
+/* mole image  */
+#mole{
+    position: absolute;
+    top: 53% ;
+    right: 0;
+    height: 350px;
+    width: 500px;
+}
+
+/* button  */
+#continueBtn{
+    margin-left: 47%;
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 180px;
+    height: 45px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Jua', sans-serif;
+    box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+}

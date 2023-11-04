@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+@font-face {
+    font-family: 'Realtime Gamer - Personal Use Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Realtime Gamer - Personal Use Regular'), url('./assests/RealtimeGamerPersonalUse-ZVL38.woff') format('woff');
+    }
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("./assests/brown-bg.png");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+}
+
+/* ---------logo-------- */
+#logo{
+    color: #FFF;
+    font-size: 94px;
+    font-family: 'Realtime Gamer - Personal Use Regular';
+    margin: 5% 0 4% 31%;
+    text-shadow: 11px 24px 10px rgba(0, 0, 0, 0.25);
+    }
+
+ /*------ player detail input box------*/
+#detailBox  {
+    margin-left: 34%;
+    border:2px solid #fff;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    backdrop-filter: blur(10px) brightness(1.1);
+    background-color: rgba(224, 153, 71, 0.27);
+    box-shadow: rgba(0, 0, 0, 0.438) 7px 10px 7px;
+}
+
+label{
+    font-family: 'Kavoon', serif;
+    font-size: 30px;
+    color: #fff;
+    margin: 7% 0 3% 10%;
+}
+
+.block-display{
+    display: block;
+}
+
+input[type="text"]{
+    width: 400px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-left:10%;
+    padding: 0 10px;
+    font-family: 'Jua', sans-serif;
+    font-size: 18px;
+}
+
+/* --------button------ */
+#startBtn{
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    background: #D07F2D;
+    color: #fff;
+    width: 180px;
+    height: 45px;
+    font-size: 24px;
+    font-family: 'Kavoon', serif;
+    margin: 3% 0 0 45%;
+    box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    
+}
+
+/* ------mole images-------  */
+
+#mole1{
+    width: 220px;
+    height: 200px;
+    position: absolute;
+    top: 54%;
+    left: 15%;
+}
+
+#mole2{
+    width: 390px;
+    height: 370px;
+    position: absolute;
+    top: 48%;
+    left: 67%;
+}

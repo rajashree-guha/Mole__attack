@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./assests/brownBlack-bg.png);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    font-family: 'Jua', sans-serif;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center                     ;
+}
+
+/*------ Game over text and bomb image------*/
+.overText{
+    width: 100%;
+    height: 200px;
+    margin-top:5% ;
+}
+
+h1{
+    font-size: 96px;
+    color: #fff;
+    margin-left: 50px;
+    text-shadow: 11px 9px 4px rgba(0, 0, 0, 0.25);
+}
+
+#bomb{
+    width: 90px;
+    height: 90px;
+    margin: 135% 0 0 3%;
+}
+
+/*--------- scoreboard--------- */
+#scoreboard{
+    border: 5px solid #fff;
+    width: 500px;
+    height: 140px;
+    border-radius: 10px;
+    margin: 62px 0 0 510px;
+    backdrop-filter: blur(100);
+    background-color: rgba(224, 153, 71, 0.27);
+    box-shadow: rgba(0, 0, 0, 0.438) 7px 10px 7px;
+    text-align: center;
+    color: white;
+    padding: 27px 0 39px 0;
+}
+
+/* score  */
+h4 {
+    font-size:36px ;
+}
+
+/* win or lose text  */
+p{
+    font-size: 30px;
+}
+
+/* --------buttons------- */
+.block-display{
+    display: block;
+   
+}
+
+#playAgainBtn{
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    background: #fff;
+    box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Kavoon', serif;
+    margin: 5% 0 0 45%
+}
+
+#changeBtn{
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    background: #fff;
+    box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: 180px;
+    height: 45px;
+    font-size: 20px;
+    font-family: 'Kavoon', serif;
+    margin: 1% 0 0 45%;
+}
+
+/* -------mole------- */
+#mole{
+    width: 390px;
+    height: 370px;
+    position: absolute;
+    top: 48%;
+    left: 67%;
+}

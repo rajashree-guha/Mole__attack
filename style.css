@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Kavoon&display=swap');
+
+@font-face {
+    font-family: 'Realtime Gamer - Personal Use Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Realtime Gamer - Personal Use Regular'), url('./assests/RealtimeGamerPersonalUse-ZVL38.woff') format('woff');
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-image: url("./assests/Homepage-bg.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+}
+
+/*logo  */
+#logo{
+color: #FFF;
+  font-size: 94px;
+  font-family: 'Realtime Gamer - Personal Use Regular';
+  margin: 5% 0 0 33%;
+  text-shadow: 11px 24px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* button  */
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: transparent;
+    border: none;
+    width: 260px;
+    position: absolute;
+    top: 85%;
+    right:3%;
+}
+
+
+/* play image  */
+
+#play-img{
+    width: 44px;
+    height: 44px;
+    margin-top: 5px;
+}
+
+/* play now text  */
+#play-button{
+    font-size: 44px;
+    color: #FFF;
+    font-family: 'Kavoon', serif;
+}
+   

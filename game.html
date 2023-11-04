@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <!-- <img src="assests/mute.png" alt="" id="mute"> -->
+    <div class="flex">
+        <!-- score and time  -->
+        <div class="flex scoreBoard">
+            <h3>Score: <span id="score">0</span></h3>
+            <h3>Time: <span id="time">40</span></h3>
+        </div>
+        <div class="flex settings ">
+            <div class="circleBorder">
+              <img src="./assests/Volume.png" alt="" id="volume">
+            </div>
+            <div class="circleBorder">
+              <img src="./assests/Instruction.png" alt="" id="info">
+            </div>
+        </div>
+    </div>
+
+    <div id="moleAttack">
+        <!-- mole and bomb image  -->
+        <!-- <img src="assests\mole.png" alt="" id="mole">
+        <img src="assests\bomb.png" alt="" id="bomb"> -->
+
+        <!-- mud holes -->
+        <div class="flex mud1">
+            <img src="assests\mud.png" alt="" id="1">
+            <img src="assests\mud.png" alt="" id="2">
+            <img src="assests\mud.png" alt="" id="3">
+            <img src="assests\mud.png" alt="" id="4">
+        </div>
+        <div class="flex mud2">
+            <img src="assests\mud.png" alt="" id="5">
+            <img src="assests\mud.png" alt="" id="6">
+            <img src="assests\mud.png" alt="" id="7">
+            <img src="assests\mud.png" alt="" id="8">
+        </div>
+    </div>
+
+     <!-- game mode  -->
+    <div id="pop-up">
+        <div id="gameMode" class="flex column">
+            <h3 id="modeText">CHOOSE GAME MODE</h3>
+            <button id="easyMode">Easy</button>
+            <button id="mediumMode">Medium</button>
+            <button id="hardMode">Hard</button>
+        </div>
+    </div>
+    
+</body>
+</html>
