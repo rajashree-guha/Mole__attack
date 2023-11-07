@@ -7,44 +7,43 @@
     <link rel="stylesheet" href="game.css">
 </head>
 <body>
-    <!-- <img src="assests/mute.png" alt="" id="mute"> -->
     <div class="flex">
         <!-- score and time  -->
-        <div class="flex scoreBoard">
+        <div class="flex scoreBoard  colum ">
+            <h3>Lives: <span id="lives">3</span></h3>
             <h3>Score: <span id="score">0</span></h3>
-            <h3>Time: <span id="time">40</span></h3>
+            <h3>Time: <span id="time">60</span></h3>
         </div>
+        <!-- ----settings--- -->
         <div class="flex settings ">
             <div class="circleBorder">
               <img src="./assests/Volume.png" alt="" id="volume">
+              <img src="assests/mute.png" alt="" id="mute">
             </div>
-            <div class="circleBorder">
-              <img src="./assests/Instruction.png" alt="" id="info">
+            <div class="circleBorder ">
+              <img src="./assests/Logout.png" alt="" id="logout">
             </div>
         </div>
     </div>
 
-    <div id="moleAttack">
-        <!-- mole and bomb image  -->
-        <!-- <img src="assests\mole.png" alt="" id="mole">
-        <img src="assests\bomb.png" alt="" id="bomb"> -->
-
+    <div >
         <!-- mud holes -->
-        <div class="flex mud1">
-            <img src="assests\mud.png" alt="" id="1">
-            <img src="assests\mud.png" alt="" id="2">
-            <img src="assests\mud.png" alt="" id="3">
-            <img src="assests\mud.png" alt="" id="4">
+        <div class="grid" id="moleAttack">
+            <div class="hole" id="hole1"></div>
+            <div class="hole" id="hole2"></div>
+            <div class="hole" id="hole3"></div>
+            <div class="hole" id="hole4"></div>
+            <div class="hole" id="hole5"></div>
+            <div class="hole" id="hole6"></div>
+            <div class="hole" id="hole7"></div>
+            <div class="hole" id="hole8"></div>
+            <div class="hole" id="hole9"></div>
+            <div class="hole" id="hole10"></div>
+            <div class="hole" id="hole11"></div>
+            <div class="hole" id="hole12"></div>
         </div>
-        <div class="flex mud2">
-            <img src="assests\mud.png" alt="" id="5">
-            <img src="assests\mud.png" alt="" id="6">
-            <img src="assests\mud.png" alt="" id="7">
-            <img src="assests\mud.png" alt="" id="8">
-        </div>
-    </div>
 
-     <!-- game mode  -->
+    <!-- game mode  -->
     <div id="pop-up">
         <div id="gameMode" class="flex column">
             <h3 id="modeText">CHOOSE GAME MODE</h3>
@@ -56,3 +55,4 @@
     
 </body>
 </html>
+<script src="game.js"></script>

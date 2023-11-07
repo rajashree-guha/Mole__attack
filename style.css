@@ -15,8 +15,8 @@
 
 body{
     width: 100vw;
-    background-image: url("./assests/Homepage-bg.jpg");
-    background-size: 100% ;
+    background-image: url("./assests/home-bg.png");
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -25,7 +25,9 @@ body{
 color: #FFF;
   font-size: 94px;
   font-family: 'Realtime Gamer - Personal Use Regular';
-  margin: 5% 0 0 33%;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 70px;
   text-shadow: 11px 24px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -58,5 +60,78 @@ button{
     font-size: 44px;
     color: #FFF;
     font-family: 'Kavoon', serif;
+    cursor: pointer;;
 }
    
+
+/* ------media query------ */
+
+/* for mobile  */
+@media all and (max-width:480px){
+
+ body{
+    background-image: url("./assests/homepage-bg\(mobile\).jpg");
+    background-size:100% 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+ }   
+
+/*logo  */
+#logo{
+  font-size: 45px;
+  width: 100%;
+  margin: 70px 0 0 5px;
+}
+    
+button{
+    width: 170px;
+    top: 85%;
+    right:3%;
+}
+
+/* play image  */
+
+#play-img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    
+}
+
+/* play now text  */
+#play-button{
+    font-size: 30px;
+}
+}
+
+
+/* for tablet */
+@media all and (min-width:480px) and (max-width:784px){
+    /*logo  */
+#logo{
+    font-size: 65px;
+    width: 100%;
+    margin: 60px 0 0 30px;
+  }
+
+  button{
+    width: 205px;
+    top: 85%;
+    right:3%;
+}
+
+/* play image  */
+
+#play-img{
+    width: 35px;
+    height: 35px;
+    margin: 5px 5px 0 0;
+    
+}
+
+/* play now text  */
+#play-button{
+    font-size: 35px;
+}
+}

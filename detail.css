@@ -26,13 +26,14 @@ body{
     color: #FFF;
     font-size: 94px;
     font-family: 'Realtime Gamer - Personal Use Regular';
-    margin: 5% 0 4% 31%;
+    text-align: center;
+    margin: 90px 0 55px 0;
     text-shadow: 11px 24px 10px rgba(0, 0, 0, 0.25);
     }
 
  /*------ player detail input box------*/
 #detailBox  {
-    margin-left: 34%;
+    margin: 0 auto  ;
     border:2px solid #fff;
     border-radius: 20px;
     width: 500px;
@@ -74,8 +75,9 @@ input[type="text"]{
     height: 45px;
     font-size: 24px;
     font-family: 'Kavoon', serif;
-    margin: 3% 0 0 45%;
+    margin: 15% 35%;
     box-shadow: 5px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
     
 }
 
@@ -93,6 +95,104 @@ input[type="text"]{
     width: 390px;
     height: 370px;
     position: absolute;
-    top: 48%;
-    left: 67%;
+    bottom: 0%;
+    right: 10%;
 }
+
+/* adding media query */
+/* for mobile  */
+@media all  and (max-width:480px) {
+
+/*------ logo------*/
+#logo{
+    font-size: 44px;
+    margin: 110px 0 50px  0;
+}
+
+ /*------ player detail input box------*/
+ #detailBox  {
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+}
+
+label{
+    font-size: 20px;
+    margin: 40px 0 10px 10%;
+}
+
+
+input[type="text"]{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+}    
+
+ /*------ button-----*/
+#startBtn{
+    width: 130px;
+    height: 40px;
+    font-size: 18px;
+    margin: 70px  0 0 60px ;
+}
+
+/*------ mole images------*/
+#mole1,#mole2{
+    display: none;
+}
+}
+
+/* for tablet  */
+@media all and (min-width:480px) and (max-width:784px){
+
+    /*------ logo------*/
+    #logo{
+        font-size: 60px;
+        margin: 80px 0 50px  0;
+    }
+    
+     /*------ player detail input box------*/
+     #detailBox  {
+        margin: 0 auto;
+        width: 350px;
+        height: 300px;
+    }
+    
+    label{
+        font-size: 28px;
+        margin: 40px 0 15px 10%;
+    }
+    
+    
+    input[type="text"]{
+        width:280px;
+        height: 40px;
+        font-size: 14px;
+    }    
+    
+     /*------ button-----*/
+    #startBtn{
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+        margin: 70px  0 0 100px ;
+    }
+    
+    #buttonDiv{
+        height: 100px ;
+    }
+    
+    /*------ mole images------*/
+    #mole1{
+       display: none;
+    }
+    
+    #mole2{
+        width: 200px;
+        height: 260px;
+        position: absolute;
+        bottom: 0%;
+        right: 30px;
+    }
+    }    
+    

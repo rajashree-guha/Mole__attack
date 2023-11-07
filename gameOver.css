@@ -9,7 +9,7 @@
 body{
     background-image: url(./assests/brownBlack-bg.png);
     background-size: 100% 100vh;
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     font-family: 'Jua', sans-serif;
 }
 
@@ -36,14 +36,15 @@ h1{
 #bomb{
     width: 90px;
     height: 90px;
-    margin: 135% 0 0 3%;
+    margin: 115% 0 0 3%;
 }
+
 
 /*--------- scoreboard--------- */
 #scoreboard{
     border: 5px solid #fff;
     width: 500px;
-    height: 140px;
+    height: 170px;
     border-radius: 10px;
     margin: 62px 0 0 510px;
     backdrop-filter: blur(100);
@@ -57,6 +58,7 @@ h1{
 /* score  */
 h4 {
     font-size:36px ;
+    padding-bottom: 10px;
 }
 
 /* win or lose text  */
@@ -67,7 +69,6 @@ p{
 /* --------buttons------- */
 .block-display{
     display: block;
-   
 }
 
 #playAgainBtn{
@@ -80,7 +81,8 @@ p{
     height: 45px;
     font-size: 20px;
     font-family: 'Kavoon', serif;
-    margin: 5% 0 0 45%
+    margin: 5% 0 0 45%;
+    cursor:pointer;
 }
 
 #changeBtn{
@@ -94,6 +96,7 @@ p{
     font-size: 20px;
     font-family: 'Kavoon', serif;
     margin: 1% 0 0 45%;
+    cursor: pointer;
 }
 
 /* -------mole------- */
@@ -103,4 +106,143 @@ p{
     position: absolute;
     top: 48%;
     left: 67%;
+}
+
+@media all and (max-width:480px){
+  
+/*------ Game over text and bomb image------*/
+.overText{
+    margin-top:70px ;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+}
+
+#bomb{
+    width: 60px;
+    height: 60px;
+    margin: 60px 0 0 3%;
+}
+
+
+/*--------- scoreboard--------- */
+#scoreboard{
+    width: 300px;
+    height: 170px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    color: white;
+    padding: 27px 0 39px 0;
+
+}
+
+/* score  */
+h4 {
+    font-size:30px ;
+    padding-bottom: 5px;
+}
+
+/* win or lose text  */
+p{
+    font-size: 24px;
+}
+
+/* --------buttons------- */
+
+#playAgainBtn{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 50px auto 0 auto;
+
+}
+
+#changeBtn{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px auto 0 auto;
+    /* display: none; */
+
+}
+
+/* -------mole------- */
+#mole{
+   display: none;
+}
+
+}
+
+@media all and (min-width:480px) and (max-width:784px){
+    /*------ Game over text and bomb image------*/
+.overText{
+    margin-top:70px ;
+    text-align: center;
+}
+
+h1{
+    font-size: 80px;
+}
+
+#bomb{
+    width: 70px;
+    height: 70px;
+    margin: 80px 0 0 3%;
+
+}
+
+
+/*--------- scoreboard--------- */
+#scoreboard{
+    width: 400px;
+    height: 160px;
+    margin: 30px auto 0 auto;
+    text-align: center;
+    color: white;
+    padding: 27px 0 39px 0;
+    /* display: none; */
+
+}
+
+/* score  */
+h4 {
+    font-size:30px ;
+    padding-bottom: 10px;
+}
+
+/* win or lose text  */
+p{
+    font-size: 24px;
+}
+
+/* --------buttons------- */
+
+#playAgainBtn{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 50px auto 0 auto;
+    /* display: none; */
+
+}
+
+#changeBtn{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 10px auto 0 auto;
+    /* display: none; */
+
+}
+
+/* -------mole------- */
+#mole{
+    width: 240px;
+    height: 250px;
+    position: absolute;
+    top: 390px;
+    right: 0;
+}
 }

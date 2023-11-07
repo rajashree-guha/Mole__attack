@@ -15,20 +15,41 @@ body{
 .flex{
     display: flex;
 }
- 
-/* settings button  */
-#volume , #info {
+
+/*-------settings button-------*/
+#logout{
+    width: 35px;
+    height: 40px;
+    padding:7px 10px 7px 0; 
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+#volume{
     width: 50px;
     height: 40px;
     padding:7px 10px 7px 0; 
+    cursor: pointer;
 }
+
+
+#mute{
+    width: 50px;
+    height: 40px ;
+    padding:7px 10px 7px 0; 
+    position: absolute;
+    top: 40px;
+    display: none;
+    cursor: pointer;
+}
+
 .circleBorder{
     border:1px solid white;
     background-color: white;
     border-radius: 50px;
     width: 40px;
     height: 40px;
-    margin: 20px 10px 20px 20px;
+    margin: 40px 30px 20px 0;
     opacity: 0.9;
 }
 
@@ -36,7 +57,7 @@ body{
    justify-content:flex-end ;
 }
 
-/* score and time  */
+/*-----score and time------*/
 .scoreBoard{
   width: 100%;
   justify-content: center;
@@ -48,33 +69,42 @@ body{
  font-family: 'Jua', sans-serif;
  color: #5D3A1E;
  font-weight: 400;
- padding: 10px;
+ padding: 30px 40px 0 40px;
 }
-.mud1{
-    height: 470px;
+
+
+#moleAttack{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: repeat(3,80px);
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
+}
+.hole{
+    background-image: url("./assests/mud.png");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    width: 230px;
+    height: 100px;
 }
 
-.mud2{
-    height: 90px;
-    justify-content: center;
-    align-items: flex-end;
+.hole>img{
+    position: relative;
+    left: 26%;
+    top: -50%;
+    width: 130px;
+    height: 100px;
 }
 
-.mud1>img{
-    width: 200px;
-    height: 70px;
-    margin: 10px;
-    
+.element{
+    cursor: pointer;
 }
 
-.mud2>img {
-    width: 250px;
-    height: 90px;
-    margin: 20px;
-}
-
+/*------- pop up box ---> modes----- */
 #pop-up{
     position: absolute;
     top: 0;
@@ -117,4 +147,184 @@ button{
     border-radius: 10px;
     border: 1px solid #fff;
     margin: 11% 0 0 35%;
+    cursor: pointer;
 }
+
+@media all and (max-width:480px) {
+    
+    /*-------settings button-------*/
+    #logout{
+        width: 20px;
+        height: 28px;
+        padding:7px 10px 7px 0; 
+        margin-left: 5px;
+        margin-top: -5px;
+    }
+    
+    #volume{
+        width: 30px;
+        height: 30px;
+        padding:7px 10px 7px 0; 
+        position: absolute;
+        top: 40px;
+        /* display: none; */
+    }
+    
+    #mute{
+        width: 30px;
+        height: 30px ;
+        padding:7px 10px 7px 0; 
+        position: absolute;
+        top: 40px;
+    }
+    
+    .circleBorder{
+        width: 20px;
+        height: 20px;
+        margin: 45px 10px 20px 0;
+        opacity: 0.9;
+    }
+    
+    /*-----score and time------*/
+
+    .colum{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 35px; */
+        /* display: none; */
+    }
+    
+    .scoreBoard{
+        height: 100px;
+        padding-top: 90px;
+        margin-left:35px;
+    }
+
+    .scoreBoard>h3{
+     font-size: 22px;
+     padding: 0;
+     margin: 10px auto;
+    }
+    
+    /* hole grid  */
+    #moleAttack{
+        position: absolute;
+        top: 450px;
+        display: grid;
+        grid-template-columns: repeat(4,80px);
+        grid-template-rows: repeat(3,50px);
+    }
+
+    .hole{
+        width: 80px;
+        height: 80px;
+    }
+    
+    .hole>img{
+        position: relative;
+        left: 110px;
+        top: -30%;
+        width: 35px;
+        height: 45px;
+    }
+    
+    
+    /*------- pop up box ---> modes----- */
+    
+    #pop-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gameMode{
+        top: auto;
+        bottom: auto ;
+        left: auto;
+        right: auto;
+        width: 280px;
+        height:300px;
+    }
+    
+    #gameMode>h3{
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+
+    button{
+        width: 120px;
+        height: 40px;
+        font-size: 24px;
+        margin: auto;
+    }
+    
+}
+
+@media all  and (min-width:375px) and (max-width:425px){
+
+    .scoreBoard{
+        padding-top: 105px;
+    }
+
+    .scoreBoard>h3{
+        font-size: 26px;
+       }
+
+    /* hole grid  */
+    #moleAttack{
+        position: absolute;
+        top: 450px;
+        display: grid;
+        grid-template-columns: repeat(4,90px);
+        grid-template-rows: repeat(3,50px);
+    }
+
+    .hole{
+        width: 90px;
+        height: 100px;
+    }
+
+    .hole>img{
+        position: relative;
+        left: 115px;
+        top: -33%;
+        width: 45px;
+        height: 55px;
+    }
+}
+
+@media all  and (min-width:425px ) and (max-width:480px){
+    .scoreBoard{
+        padding-top: 105px;
+    }
+
+    .scoreBoard>h3{
+        font-size: 28px;
+       }
+
+    /* hole grid  */
+    #moleAttack{
+        position: absolute;
+        top: 440px;
+        display: grid;
+        grid-template-columns: repeat(4,100px);
+        grid-template-rows: repeat(3,50px);
+    }
+
+    .hole{
+        width: 100px;
+        height: 100px;
+    }
+
+    .hole>img{
+        position: relative;
+        left: 26%;
+        top: -40%;
+        width: 55px;
+        height: 65px;
+    }
+}
+
+

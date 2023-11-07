@@ -13,16 +13,19 @@
     </div>
 
     <!-- player detail input box -->
-    <div id="detailBox">
+    <form action="./instruction.html" id="detailBox">
         <div>
             <label for= "name" class="block-display">Enter your Name</label>
-            <input type="text" name="" id="name" placeholder="Enter your name" >
+            <input type="text" name="" id="name" placeholder="Enter your name" required  autocomplete="off">
         </div>
         <div>
-            <label for= "nickName" class="block-display">Enter your Nick name</label>
-            <input type="text" name="" id="nickName" placeholder="Enter your nick name" >
+            <label for= "nickName" class="block-display">Enter your Username</label>
+            <input type="text" name="" id="userName" placeholder="Enter your Username" required  autocomplete="off">
         </div>
-    </div>
+        <div id="buttonDiv">
+           <input type="submit" value="Start Now" id="startBtn">
+        </div>
+    </form>
 
     <!-- cartoon characters -->
     <div>
@@ -32,9 +35,7 @@
         <img src="assests\mole2-bg.png" alt="" id="mole2">
     </div>
 
-    <div>
-        <button id="startBtn">Start Now</button>
-    </div>
     
 </body>
 </html>
+<script src="./detail.js"></script>
