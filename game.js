@@ -159,7 +159,7 @@ hardBtn.addEventListener("click",()=>{
 
   
 // timer
-let timer = 500; 
+let timer = 60; 
 function timeInterval(){
     interval =setInterval(()=>{
       timer--;

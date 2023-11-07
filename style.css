@@ -107,7 +107,7 @@ button{
 
 
 /* for tablet */
-@media all and (min-width:480px) and (max-width:784px){
+@media all and (min-width:480px) and (max-width:768px){
     /*logo  */
 #logo{
     font-size: 65px;

@@ -116,8 +116,8 @@ body{
 
 #gameMode{
     position: absolute;
-    top: 20%;
-    left: 33%;
+    top: 22%;
+    left: 32%;
     box-shadow: 9px 13px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     background-image: url("./assests/board2.png");
@@ -325,6 +325,102 @@ button{
         width: 55px;
         height: 65px;
     }
+}
+
+@media all and (min-width:480px) and (max-width:768px) {
+        /*-------settings button-------*/
+        #logout{
+            width: 30px;
+            height: 35px;
+            margin-left: 8px;
+            margin-top: 0;
+        }
+        
+        #volume{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 38px;
+            margin-left: 3px;
+        }
+        
+        #mute{
+            width: 40px;
+            height: 40px ; 
+            position: absolute;
+            top: 38px;
+            margin-left: 3px;
+        }
+        
+        .circleBorder{
+            width: 35px;
+            height: 35px;
+            margin: 40px 20px 20px 0;
+        }
+        
+        /*-----score and time------*/
+    
+        .scoreBoard{
+            width: 100%;
+            margin: 12px 0 0 90px;
+          }
+          
+          .scoreBoard>h3{
+           font-size: 30px;
+           padding: 30px 20px 0 20px;
+          }
+        
+        /* hole grid  */
+        #moleAttack{
+            position: absolute;
+            top: 420px;
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,60px);
+        }
+    
+        .hole{
+            width: 150px;
+            height: 100px;
+        }
+    
+        .hole>img{
+            position: relative;
+            left: 26%;
+            top: -40%;
+            width: 85px;
+            height: 75px;
+        }
+        
+        
+        /*------- pop up box ---> modes----- */
+        
+        #pop-up{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #gameMode{
+            top: auto;
+            bottom: auto ;
+            left: auto;
+            right: auto;
+            width: 350px;
+            height:300px;
+        }
+        
+        #gameMode>h3{
+            font-size: 27px;
+            margin-bottom: 10px;
+        }
+    
+        button{
+            width: 120px;
+            height: 40px;
+            font-size: 24px;
+            margin: auto;
+        }
 }
 
 

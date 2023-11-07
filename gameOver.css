@@ -175,7 +175,7 @@ p{
 
 }
 
-@media all and (min-width:480px) and (max-width:784px){
+@media all and (min-width:480px) and (max-width:768px){
     /*------ Game over text and bomb image------*/
 .overText{
     margin-top:70px ;
