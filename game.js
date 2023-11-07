@@ -15,32 +15,49 @@ var holes = document.querySelectorAll(".hole");
 let previousHole;  
 let gameover = false; 
 let lives = 3; 
-let scoreCount = 0; 
 let randomHole;
 let bombClicked=0;
+let scoreCount = 0; 
 
-// adding background music 
+localStorage.setItem("score", scoreCount);
+localStorage.setItem("bombClicked", bombClicked);
+
+//audio
+let clickSound = new Audio('./assests/clicksound.mp3')
+let hammerSound = new Audio("./assests/hammer.mp3")
+let bombSound = new Audio('./assests/bomb.wav')
 let bgm = new Audio("./assests/gameSound.mp3")
 
+
+//  background music 
 bgm.play()
 bgm.loop = true
 
 // Settings-- volume, mute, and instruction
+var volumeButtonClicked = 0;
 volume.addEventListener("click", () => {
+  volumeButtonClicked++;
   volume.style.display = "none";
   mute.style.display = "block";
-  bgm.pause()
+  clickSound.play();
+  bgm.pause();
 });
 
 mute.addEventListener("click", () => {
+  volumeButtonClicked++;
   mute.style.display = "none";
   volume.style.display = "block";
   bgm.play()
+  clickSound.play();
   
 });
 
 logout.addEventListener("click", () => {
-  window.location.href = "./detail.html";
+  clickSound.play();
+  // redirecting to next page 
+  clickSound.onended = () => {
+      window.location.href = "detail.html";
+  };
 });
 
 
@@ -74,19 +91,24 @@ function makeElement() {
   img.src = `./assests/element${randomElement}.png`;
   hole.appendChild(img);
   previousHole = randomHole; 
-
+  
   // Add click event listener to the image
   img.addEventListener('click', () => {
     if (randomElement === 1) {
       img.remove(); 
       scoreCount++; 
+      localStorage.setItem("score", scoreCount);
       score.textContent = `${scoreCount}`;
 
       // click sound 
-      let clickSound = new Audio('./assests/clicksound.mp3')
-      clickSound.play()
-
-    } else if (randomElement === 2) {
+      if(volumeButtonClicked%2==0){
+      hammerSound.play()
+      }else{
+        hammerSound.pause();
+      }
+    } 
+    
+    else if (randomElement === 2) {
       img.remove(); 
       lives--;
       live.innerHTML = `${lives}`;
@@ -95,22 +117,19 @@ function makeElement() {
 
       localStorage.setItem("bombClicked", bombClicked);
       if(bombClicked==3){
-         endGameBomb(); 
+         endGame(); 
       }
       // bombSound
-      let bombSound = new Audio('./assests/bomb.wav')
-      bombSound.play()
+      if(volumeButtonClicked%2==0){
+        bombSound.play()
+
+        }else{
+          bombSound.pause()
+        }
     }
 
   });
 
-}
-
-// end game when bomb is clicked
-function endGameBomb() {
-  gameover = true;
-  localStorage.setItem("score", scoreCount);
-  window.location.href = "./gameOver.html";
 }
 
 // remove pop up 
@@ -119,25 +138,31 @@ function remove(){
 }
 
 //Game over
+// setTimeout(endGame,2000)
 function endGame() {
   gameover = true;
   localStorage.setItem("score", scoreCount);
   localStorage.setItem("bombClicked", bombClicked);
-  window.location.href = "./gameOver.html";
+  setTimeout(()=>{
+    window.location.href = "gameOver.html";
+  }, 500)
 }
   
 //----------Event listeners--------
 easyBtn.addEventListener("click",()=>{
+  // click sound 
+  clickSound.play()
     remove()
     timeInterval()
     setInterval(() => {
         if (!gameover) {
           makeElement();
     }
-}, 1300);
+}, 1500);
 })
 
 mediumBtn.addEventListener("click",()=>{
+  clickSound.play()
     remove()
     timeInterval()
     setInterval(() => {
@@ -148,13 +173,14 @@ mediumBtn.addEventListener("click",()=>{
 })
 
 hardBtn.addEventListener("click",()=>{
+  clickSound.play()
     remove()
     timeInterval()
     setInterval(() => {
         if (!gameover) {
             makeElement(); 
         }
-      }, 750);
+      }, 770);
 })
 
   
@@ -167,7 +193,7 @@ function timeInterval(){
 
         if(timer == 0 ){
             clearInterval(interval);
-            location.href="./gameOver.html"
+            window.location.href="gameOver.html"
         }
     },1000)
     }

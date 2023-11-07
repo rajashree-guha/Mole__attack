@@ -1,4 +1,10 @@
 
+// adding background music 
+let bgm = new Audio("./assests/gameSound.mp3")
+
+bgm.play()
+bgm.loop = true
+
 var startBtn = document.getElementById("startBtn");
 
 
@@ -24,8 +30,14 @@ startBtn.addEventListener("click",()=> {
     // adding name to localStorage
     localStorage.setItem("name", data.name);
 
+    let clickSound = new Audio('./assests/clicksound.mp3')
+    clickSound.play();
+
     // redirecting to next page 
-    window.location.href = "./instruction.html";
+    clickSound.onended = () => {
+        window.location.href = "instruction.html";
+    };
+
 }
     
 });

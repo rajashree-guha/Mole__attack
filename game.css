@@ -211,21 +211,21 @@ button{
     /* hole grid  */
     #moleAttack{
         position: absolute;
-        top: 450px;
+        top: 380px;
         display: grid;
-        grid-template-columns: repeat(4,80px);
-        grid-template-rows: repeat(3,50px);
+        grid-template-columns: repeat(3,90px);
+        grid-template-rows: repeat(4,50px);
     }
 
     .hole{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
     }
     
     .hole>img{
         position: relative;
-        left: 110px;
-        top: -30%;
+        left: 30px;
+        top: -28%;
         width: 35px;
         height: 45px;
     }
@@ -275,21 +275,21 @@ button{
     /* hole grid  */
     #moleAttack{
         position: absolute;
-        top: 450px;
+        top: 380px;
         display: grid;
-        grid-template-columns: repeat(4,90px);
-        grid-template-rows: repeat(3,50px);
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(4,50px);
     }
 
     .hole{
-        width: 90px;
-        height: 100px;
+        width: 100px;
+        height: 110px;
     }
 
     .hole>img{
         position: relative;
-        left: 115px;
-        top: -33%;
+        left: 35px;
+        top: -28%;
         width: 45px;
         height: 55px;
     }
@@ -307,14 +307,14 @@ button{
     /* hole grid  */
     #moleAttack{
         position: absolute;
-        top: 440px;
+        top: 350px;
         display: grid;
-        grid-template-columns: repeat(4,100px);
-        grid-template-rows: repeat(3,50px);
+        grid-template-columns: repeat(3,120px);
+        grid-template-rows: repeat(4,60px);
     }
 
     .hole{
-        width: 100px;
+        width: 120px;
         height: 100px;
     }
 
@@ -373,7 +373,7 @@ button{
         /* hole grid  */
         #moleAttack{
             position: absolute;
-            top: 420px;
+            top: 380px;
             display: grid;
             grid-template-columns: repeat(4,150px);
             grid-template-rows: repeat(3,60px);
@@ -381,7 +381,7 @@ button{
     
         .hole{
             width: 150px;
-            height: 100px;
+            height: 150px;
         }
     
         .hole>img{
