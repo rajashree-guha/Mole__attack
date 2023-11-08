@@ -10,6 +10,3 @@ Mole Attack is a classic arcade game where players quickly and accurately hit mo
 5. There are three lives avaliable. 
 6. The duration of the game is 60 seconds.
 
-## Help taken from:-
-
- Youtube channel --> KennyYipCoding

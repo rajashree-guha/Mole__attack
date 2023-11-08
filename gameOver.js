@@ -53,8 +53,7 @@ if (clickedBomb==3 || value==0 ){
     loseSound.play();
 }
 else{
-    
-    
+
     // win sound
     phrase.innerHTML=winPhrases[Math.floor(Math.random() * 3)]
     winSound.play();

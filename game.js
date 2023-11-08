@@ -67,6 +67,7 @@ logout.addEventListener("click", () => {
 // generating random mole and bomb to come out of the hole 
 
 function makeElement() {
+  
   // Generating a random number to select either mole or bomb
   var randomElement = Math.ceil(Math.random() * 2);
 
