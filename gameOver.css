@@ -66,6 +66,13 @@ p{
     font-size: 30px;
 }
 
+#player{
+    font-size: 32px;
+    font-family: 'Kavoon', serif;
+    -webkit-text-stroke: 0.5px white;
+    color: rgba(197, 83, 83, 0.735);
+}
+
 /* --------buttons------- */
 .block-display{
     display: block;
@@ -117,6 +124,7 @@ p{
     left: 67%;
 }
 
+
 @media all and (max-width:480px){
   
 /*------ Game over text and bomb image------*/
@@ -158,6 +166,9 @@ p{
     font-size: 24px;
 }
 
+#player{
+    font-size: 25px;
+}
 /* --------buttons------- */
 
 #playAgainBtn{
@@ -183,6 +194,8 @@ p{
 }
 
 }
+
+/* tablet */
 
 @media all and (min-width:480px) and (max-width:768px){
     /*------ Game over text and bomb image------*/
@@ -224,6 +237,10 @@ h4 {
 /* win or lose text  */
 p{
     font-size: 24px;
+}
+
+#player{
+    font-size: 26px;
 }
 
 /* --------buttons------- */

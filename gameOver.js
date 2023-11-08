@@ -34,21 +34,21 @@ changeBtn.addEventListener("click",()=>{
 
 // declaring different phrases for winning and losing
 var losePhrases = [
-    `You gave it your best shot! ${playerName}, Try again!`,
-    `It's okay ${playerName}, better luck next time!`,
-    `Oops! ${playerName}, you didn't win. Don't give up!`,
+    `You gave it your best shot! <span id="player">${playerName}</span>, Try again!`,
+    `It's okay <span id="player">${playerName}</span>, better luck next time!`,
+    `Oops! <span id="player">${playerName}</span>, you didn't win. Don't give up!`,
 ]
 
 var winPhrases = [
-    `Great job! ${playerName}, You've won!`,
-    `Congratulations! ${playerName}, You've won the game!`,
-    `You did it! ${playerName}, You're the champion!`,
+    `Great job! <span id="player">${playerName}</span>, You've won!`,
+    `Congratulations! <span id="player">${playerName}</span>, You've won the game!`,
+    `You did it! <span id="player">${playerName}</span>, You're the champion!`,
 ]
 
 // checking and displaying the phrases according to the given condition 
 if (clickedBomb==3 || value==0 ){
 
-    phrase.innerText=losePhrases[Math.floor(Math.random() * 3)]
+    phrase.innerHTML=losePhrases[Math.floor(Math.random() * 3)]
     // lose sound
     loseSound.play();
 }
@@ -56,7 +56,7 @@ else{
     
     
     // win sound
-    phrase.innerText=winPhrases[Math.floor(Math.random() * 3)]
+    phrase.innerHTML=winPhrases[Math.floor(Math.random() * 3)]
     winSound.play();
     
 

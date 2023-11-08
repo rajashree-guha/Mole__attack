@@ -31,8 +31,8 @@ let bgm = new Audio("./assests/gameSound.mp3")
 
 
 //  background music 
-bgm.play()
-bgm.loop = true
+bgm.play();
+bgm.loop = true;
 
 
 //----------Settings-- volume, mute, and instruction----------
