@@ -5,8 +5,8 @@ let bgm = new Audio("./assests/gameSound.mp3")
 bgm.play()
 bgm.loop = true
 
+// adding event listener to the button 
 var startBtn = document.getElementById("startBtn");
-
 
 startBtn.addEventListener("click",()=> {
 
